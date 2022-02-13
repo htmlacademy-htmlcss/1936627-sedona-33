@@ -37,13 +37,22 @@
     src: url("fonts/pt-sans-narrow-bold.woff2") format("woff2");
     font-display: swap;
   }
-  
+  html{
+      height: 100%;
+  }
   body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
     font-family: "PT Sans" sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: black;
     background-color: white;
+  }
+  .main-container{
+      flex-grow: 1;
   }
 
   .button{
@@ -62,7 +71,20 @@
       color: black;
       background-color: white;
   }
-
+.navigation{
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+.navigation-list{
+    margin: 0;
+    padding: 0;
+    width: 400px;
+}
+.navigation-user{
+    width: 300px;
+    margin-left: auto;
+}
   .navigation-link {
     font-family: "PT Sans", sans-serif; 
     font-weight: 700;
@@ -78,9 +100,6 @@
   .main-index {
     color: black;
     background-color: white;
-    background-image: url("../images/sedona-view.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
   }
   .main-inner{
       background-image: url("../images/catalog-background-1.jpg");
@@ -89,11 +108,24 @@
       color: white;
       background-color: white;
   }
+  .page-container{
+      width: 1200px;
+      margin: 0 auto;
+  }
+  .logo{
+      display: block;
+      margin: 0 auto;
+  }
+  .logo-background{
+    background-image: url("../images/sedona-view.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
   .inner-header-title{
       font-size: 60px;
       line-height: 77px;
       font-weight: 700;
-      color: black;
+      color:white;
   }
   .breadcrumbs-link{
       font-size: 16px;
@@ -102,7 +134,14 @@
       color: white;
   }
   .advantages-list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
       text-align: center;
+  }
+  .advantages-item{
+      width: 400px;
   }
 
   .advantages-title {
@@ -151,7 +190,13 @@
     /* background-repeat: no-repeat; */
     /* background-size: auto;  */
   }
-  .catalog-filter-title{
+  .catalog-filters{
+      display: flex;
+  }
+.catalog-filter-group{
+    width: 79px  auto;
+}
+.catalog-filter-title{
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -165,6 +210,9 @@
     font-size: 30px;
     line-height: 38px;
     font-weight: 700;
+    color: black;
+    font-family: "PT Sans" sans-serif;
+    text-transform: uppercase;
 }
 .select-control{
   font-size: 18px;
@@ -222,6 +270,7 @@
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
+    width: 620px;
 }
 .pagination{
     color: black;
@@ -316,5 +365,19 @@
     color: black;
   }
   .footer-telephone-number{
+      width: 720px;
       text-decoration: none;
+  }
+  .footer-socials{
+      margin-right: auto;
+      max-width: 107px;
+  }
+  .footer-logo-htmlacademy{
+      margin-left: auto;
+      max-width: 115px;
+  }
+  .page-footer-container{
+      display: flex;
+      width: 1200px;
+      margin: 0 auto;
   }
