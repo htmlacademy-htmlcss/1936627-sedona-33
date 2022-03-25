@@ -187,10 +187,25 @@
       color:white;
   }
   .breadcrumbs-link{
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: nowrap;
       font-size: 16px;
       line-height: 20px;
       font-weight: 400;
       color: white;
+  }
+  .breadcrumbs-item{
+    display: flex;
+  }
+  .index-link{
+  padding-left: 73px;
+  padding-right: 11px;
+  padding-top: 3px;
+  }
+  .nav-arrow{
+    padding-right: 10px;
+    padding-top: 11px;
   }
   .advantages-list {
       margin: 0;
